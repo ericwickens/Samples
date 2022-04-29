@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: demo-ui
-        image: gcr.io/<project-id>/web-server-image:v2.0.0
+        image: ericwickens/web-server-image:latest
         env: 
         - name: API_SERVER
           value: "http://demo-api-service:8082"

@@ -14,11 +14,21 @@ spec:
     spec:
       containers:
       - name: demo-api
-        image: gcr.io/<project-id>/api-server-image:v2.0.0
+        image: ericwickens/api-server-image:v1.1.0
         env:
         - name: PORT
           value: "8082"
-        - name: GOOGLE_CLOUD_PROJECT
-          value: "<project-id>"
         ports:
         - containerPort: 8082
+        env:
+        - name: DBHOST
+          value: "database-server-mariadb"
+        - name: DBUSER
+          value: "root"
+        - name: DBPASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: database-server-mariadb
+              key: mariadb-root-password
+        - name: DBDATABASE
+          value: "events_db"  
