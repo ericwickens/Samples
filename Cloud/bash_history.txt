@@ -194,3 +194,431 @@ docker push ericwickens/web-server-image
 cd ..
 cd ..
 mkdir Samples
+rm -Rf ~
+exit
+gcloud config set project roidtc-april2022-u402
+clear
+pwd
+pwd
+[200~
+wget https://storage.googleapis.com/deloitte-training-apps/events-app-2022.zip
+pwd
+ls
+unzip events-app-2022.zip 
+ls
+cd events-app-2022/
+ls
+clear
+ls
+cd web-server
+ls
+npm i
+cd ..
+ls
+cd web-server
+ls
+cd events-app-2022/
+ls
+cd api-server
+npm i
+npm start
+npm start
+npm start
+gcloud config set project roidtc-april2022-u402
+clear
+ll
+cd events-app-2022/
+cd web-server/
+ll
+mk .gitignore
+clear
+cd ..
+git config --global "ericwickens@gmail.com"
+git config --global User.email "ericwickens@gmail.com"
+git congig --global User.name "ericwickens"
+git config --global User.name "ericwickens"
+git config --global init.defaultBranch main
+git config --global list
+git config --global --list
+git config --global credential.helper store
+cd api-server/
+ll
+git init
+ll
+git add .
+ll
+cd .git
+ll
+cd ..
+clear
+ll
+cd ..
+cd web-server/
+cd ..
+cd api-server/
+ll
+git status
+git commit -m "Initial Commit"
+git remote add origin https://github.com/ericwickens/events-app-api-server.git
+git branch -m main
+git push -u origin main
+cd ..
+cd web-server/
+git init
+git add .
+git status
+git commit -m "Initial commit Web Server"
+git remote add origin https://github.com/ericwickens/events-app-web-server.git
+git branch -m main
+git push -u origin main
+clear
+cd ..
+git branch
+cd api-server/
+git branch
+git branch api-server-v1
+git branch
+git checkout api-server-v1 
+git add .
+git status
+git commit -u api-server-v1
+git commit api-server-v1
+git commit -m "Changed Team Name"
+git checkout main
+git checkout api-server-v1
+git branch
+git checkout main
+git merge api-server_v1
+git branch
+git merge api-server-v1 
+git push 
+git branch main
+git checkout main
+git add .
+git status
+git commit -m "testing out something"
+git pull 
+git pull origin/main
+git pull https://github.com/ericwickens/events-app-api-server.git
+git branch
+cat Dockerfile
+touch Dockerfile
+cd ..
+cd web-server/
+touch Dockerfile
+ll
+Dockerfile
+open Dockerfile
+view Dockerfile
+gcloud config set project roidtc-april2022-u402
+git branch
+git checkout main
+cd events-app-2022/
+cd api-server/
+git branch
+touch .dockerignore
+cd ..
+cd web-server/
+touch .dockerignore
+ll
+cd ..
+cd api-server/
+gcloud config set project roidtc-april2022-u402
+cd events-app-2022/
+cd api-server/
+view Dockerfile
+docker build . -t api-server:v1.1.0
+docker images
+cd ..
+cd web-server/
+docker build . -t web-server:v1.0.0
+Docker Images
+docker images
+docker run -d -p 8082:8082 api-server:v1.1.0
+docker run -d -e API_SERVER='http://localhost:8082' --network="host" web-server:v1.1.0
+docker run -d -e API_SERVER='http://localhost:8082' --network="host" web-server:v1.0.0
+docker images
+docker ps -a
+docker stop web-serv
+docker stop 49b40d
+docker ps -a
+docker stop 661e8
+docker ps -a
+docker images
+docker rm 661e8e
+docker ps -a
+docker images
+docker rmi api-server
+docker rmi api-server:v1.1.0
+docker images
+cd ..
+cd api-server/
+docker build -t api-server:v1.0.0
+docker build -t api-server:v1.0.0 .
+docker images
+docker run -d -p 8082:8082 api-server:v1.0.0
+git branch
+git add .
+git status
+git commit -m "Adding Docker File"
+git push
+cd ..
+cd web-server/
+git branch
+git add .
+git status
+git commit -m "Adding Docker Files"
+docker ps -a
+docker stop $(docker ps -q)
+docker ps -a
+docker ps
+docker rm $(docker ps -a -q)
+docker ps -a
+docker images
+docker rmi $(f376e52e4ddd 5e8503ed1ca2)
+docker rmi api-server:v1.0.0
+docker rmi web-server:v1.0.0
+docker images
+docker build . -t ericwickens/web-server-image
+cd ..
+cd api-server/
+docker build . -t ericwickens/api-server-image
+docker images
+docker login
+docker push ericwickens/api-server-image
+docker push ericwickens/web-server-image
+cd ..
+cd ..
+mkdir Samples
+cd Samples
+git init
+git add .
+git status
+git branch
+git commit -m "Initial Commit"
+git push -u origin main
+git config --global --list
+git remote add origin ericwickens/Samples
+git branch -m main
+git branch
+git push -u origin main
+git remote add origin https://github.com/ericwickens/Samples.git
+git push -u origin main
+git remote rm origin
+git remote add origin https://github.com/ericwickens/Samples.git
+git push -u origin main
+docker images
+docker ps -a
+docker rmi $(docker images -q)
+docker run -d -p 8082:8082 ericwickens/api-server-image:latest
+docker run -d -e API_SERVER'http://localhost:8082' --network="host" ericwickens/web-server-image:latest
+docker ps -a
+docker images
+ll
+cd ..
+cd events-app-2022/
+cd api-server/
+docker images
+docker run -d -e API_SERVER='http://localhost:8082' --network="host" ericwickens/web-server-image:latest
+docker ps -a
+docker rm $(docker ps -a -q)
+docker stop $(docker ps -q)
+docker rm $(docker ps -a -q)
+docker ps -a
+docker run -d -e API_SERVER='http://localhost:8082' --network="host" ericwickens/web-server-image:latest
+docker run -d -p 8082:8082 ericwickens/api-server-image:latest
+docker ps -a
+docker push ericwickens/api-server-image:v1.0.0
+docker ps -a
+docker exec -it 2edb52dd2f47 bash
+docker exec -it 5fb086364648 bash
+docker exec -it 2edb52dd2f47 /bin/bash
+docker ps
+docker exec -it ericwickens/api-server-image:latest /bin/bash
+docker exec -it ericwickens/web-server-image:latest /bin/bash
+docker exec -it 5fb086364648 /bin/bash
+docker images
+git remote -v
+gcloud config set project roidtc-april2022-u402
+docker ps -a
+docker stop $(docker ps -a -q)
+docker images
+cd events-app-2022/
+gcloud container clusters create "cluster-1" --zone "us-central1-c" --machine-type "e2-small" --preemptible --num-nodes "3" --scopes "https://www.googleapis.com/auth/cloud-platform"
+gcloud auth login
+gcloud container clusters create "cluster-1" --zone "us-central1-c" --machine-type "e2-small" --preemptible --num-nodes "3" --scopes "https://www.googleapis.com/auth/cloud-platform"
+gcloud container clusters create "cluster-1" --zone "us-central1-c" --machine-type "e2-small" --preemptible --num-nodes "3" --scopes "https://www.googleapis.com/auth/cloud-platform"
+kubectl get services
+kubectl get nodes
+cd ~
+ls
+ll
+wget 
+wget https://storage.googleapis.com/deloitte-sample-masters/k8s-yamls.zip
+unzip k8s-yamls.zip 
+cd k8s-yamls/
+ll
+kubectl apply -f api-server-deployment.yaml 
+kubectl apply -f api-server-service.yaml 
+kubectl apply -f web-server-deployment.yaml 
+kubectl apply -f web-server-service.yaml 
+kubectl get svc
+docker ps
+docker ps -a
+docker run 2edb52
+docker login
+kubectl get svc
+kubectl apply -f api-server-deployment.yaml 
+docker run -d -p ericwickens/api-server-image:latest .
+docker run --help
+docker images
+docker ps
+docker ps -a
+gcloud config set project roidtc-april2022-u402
+docker ps -a
+docker run ericwickens/api-server-image:latest
+docker stop 44122bb
+exit
+docker rm $(docker ps -a -q)
+docker images
+docker rmi @(docker images -q)
+docker rmi $(docker images -q)
+docker run -d -p 8082:8082 ericwickens/api-server-image:latest
+docker run -d -e API_SERVER='http://localhost:8082' --network="host" ericwickens/web-server-image:latest
+kubectl
+kubectl get nodes
+kubectl get services
+kubectl apply --help
+kubectl get svc
+kubectl get service
+cd ~
+cd Samples/
+ll
+cd Cloud
+unzip k8s-yamls.zip 
+cd ..
+git status
+git add .
+git status
+git commit -m "Adding YAML Files"
+git push
+git branch
+cd ..
+cd k8s-yamls/
+ll
+kubectl --help
+kubectl apply --help
+gcloud config set project roidtc-april2022-u402
+docker images
+docker ps
+kubectl get svc
+gcloud auth login
+kubectl get service
+kubectl get services
+helm repo add bitnami https://charts.bitnami.com/bitnami
+helm install database-server bitnami/mariadb
+gcloud config set project roidtc-april2022-u402
+kubectl get services
+docker login
+clear
+wget https://storage.googleapis.com/deloitte-training-apps/sql-sb-addon-2022
+wget https://storage.googleapis.com/deloitte-training-apps/sql-sb-addon-2022.zip
+wget https://storage.googleapis.com/deloitte-training-apps/sql-db-addon-2022.zip
+cd Cloud
+cd Samples
+cd Cloud
+ll
+unzip sql-db-addon-2022.zip
+ll
+cd sql-db-addon-2022/
+ll
+cd events-sql-init/
+ll
+docker build . -t ericwickens/events-sql-init-job:v1.0.0
+docker images
+docker push ericwickens/events-sql-init-job:v1.0.0
+cd sql-init-job-yamls/
+ll
+kubectl apply -f db_init_job.yaml 
+cd ..
+cd ..
+cp package.json ../events-app-2022/api-server/.
+cp package.json ../events-app-2022/api-server/
+cp package.json /events-app-2022/api-server/
+cp package.json ~/events-app-2022/api-server/
+cp -r models ../events-app-2022/api-server/src/
+cp -r models ~/events-app-2022/api-server/src/
+cd services
+ll
+cp class.mysql.database.service.js ~/events-app-2022/api-server/src/services/
+cp class database.service.js ~/events-app-2022/api-server/src/services/
+cd ..
+cd ..
+ll
+cd k8s-yamls/
+ll
+cd ~
+cd events-app-2022/api-server
+ll
+docker build . -t ericwickens/api-server-image:v1.1.0
+docker push ericwickens/api-server-image:v1.1.0
+kubectl apply -f ~/Samples/Cloud/k8s-yamls/api-server-deployment.yaml 
+cd ~ /Samples
+cd ~/Samples
+ll
+git add .
+git status
+git commit -m "Adding SQL stuff and yaml changes"
+git push
+cd ..
+cd events-app-2022/
+cd api-server/
+ll
+git add .
+git status
+git commit -m "Update to allow Maria DB"
+git push
+cd ..
+cd ..
+cd ..
+ cd Samples/Cloud/k8s-yamls/
+kubectl apply -f api-server-deployment.yaml 
+kubectl apply -f api-server-deployment.yaml 
+kubectl services
+kubectl get services
+gcloud config set project roidtc-april2022-u402
+cd /Sample/Cloud
+cd Samples/Cloud/k8s-yamls/
+cd ..
+cd ..
+ll
+git add .
+git satatus
+git status
+git commit -m "Change"
+git push
+cd Cloud/
+mkdir terraformjenkins
+cd terraformjenkins/
+wget https://storage.googleapis.com/deloitte-training/main.tf
+ls
+clear
+ls
+terraform init
+terraform apply -auto-approve
+cd ..
+ll
+cd ..
+ll
+git add .
+git status
+git commit -m "Up to date"
+git push
+cd ..
+cd events-app-2022/api-server/
+wget https://storage.googleapis.com/deloitte-sample-masters/Jenkinsfile
+ls
+ll
+view Jenkinsfile
+view Jenkinsfile
+cp Jenkinsfile ~/events-app-2022/web-server
